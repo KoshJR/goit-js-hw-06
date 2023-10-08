@@ -6,7 +6,7 @@ function getSubmitForm(event) {
   const form = event.currentTarget;
   const email = form.elements.email.value;
   const password = form.elements.password.value;
-  if (email.lenth === 0 || password.length === 0) {
+  if (email.length === 0 || password.length === 0) {
     alert("You have an empty field");
   } else {
     const userData = { email: `${email}`, password: `${password}` };
